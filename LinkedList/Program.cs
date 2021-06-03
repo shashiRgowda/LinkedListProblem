@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DataStructures
+namespace LinkedList
 {
     class Program
     {
@@ -10,6 +10,10 @@ namespace DataStructures
             list.Add(56);
             list.Add(30);
             list.Add(70);
+            list.InsertAtParticularPosition(2, 30);
+            list.RemoveFirstNode();
+            list.Display();
+            Console.ReadKey();
         }
     }
 }
