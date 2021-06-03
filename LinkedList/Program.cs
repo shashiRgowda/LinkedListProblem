@@ -6,14 +6,12 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            LinkedList list = new LinkedList();
-            list.Add(56);
-            list.Add(30);
-            list.Add(70);
-            list.InsertAtParticularPosition(2, 30);
-            list.RemoveFirstNode();
-            list.Display();
-            Console.ReadKey();
+            var linkedlist = new LinkedList();
+            linkedlist.Add(56);
+            // linkedlist.Add(30);
+            linkedlist.Add(70);
+            linkedlist.Display();
+            linkedlist.InsertAtParticularPosition(2, 30);
         }
     }
 }
