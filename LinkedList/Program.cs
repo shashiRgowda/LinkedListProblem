@@ -13,6 +13,7 @@ namespace LinkedList
             linkedlist.Add(70);
             linkedlist.Display();
             linkedlist.RemoveLastNode();
+
             Console.ReadKey();
         }
     }
