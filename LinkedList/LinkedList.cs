@@ -21,7 +21,6 @@ namespace LinkedList
                 }
                 temp.next = node;
             }
-
         }
         public void InsertAtParticularPosition(int position, int data)
         {
