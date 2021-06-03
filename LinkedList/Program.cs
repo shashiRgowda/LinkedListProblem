@@ -4,6 +4,7 @@ namespace LinkedList
 {
     class Program
     {
+        //
         static void Main(string[] args)
         {
             var linkedlist = new LinkedList();
@@ -11,7 +12,7 @@ namespace LinkedList
             linkedlist.Add(30);
             linkedlist.Add(70);
             linkedlist.Display();
-            linkedlist.RemoveFirstNode();
+            linkedlist.RemoveLastNode();
             Console.ReadKey();
         }
     }
