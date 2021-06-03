@@ -4,16 +4,14 @@ using System.Text;
 
 namespace LinkedList
 {
-    class LinkedList
+    class Linkedlist
     {
         internal Node head;
         internal void Add(int data)
         {
             Node node = new Node(data);
             if (this.head == null)
-            {
                 this.head = node;
-            }
             else
             {
                 Node temp = head;
@@ -23,6 +21,7 @@ namespace LinkedList
                 }
                 temp.next = node;
             }
+
         }
         public void InsertAtParticularPosition(int position, int data)
         {
@@ -47,6 +46,13 @@ namespace LinkedList
                 temp.next = node;
             }
         }
+        internal Node RemoveFirstNode()
+        {
+            if (this.head == null)
+                return null;
+            this.head = this.head.next;
+            return this.head;
+        }
         internal void Display()
         {
             if (this.head == null)
@@ -63,3 +69,5 @@ namespace LinkedList
         }
     }
 }
+    
+
